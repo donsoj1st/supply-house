@@ -1,0 +1,47 @@
+.datepicker-container {
+  font-family: Arial, sans-serif;
+  width: 300px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.days-of-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  background-color: #e0e0e0;
+}
+
+.day-of-week {
+  padding: 10px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.current-month {
+  background-color: #fff;
+}
+
+.other-month {
+  color: #aaa;
+}
+
+.selected {
+  background-color: #007bff;
+  color: #fff;
+}

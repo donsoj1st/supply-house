@@ -1,13 +1,148 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* datepicker started */
+.datepicker-container {
+  font-family: Arial, sans-serif;
+  width: 300px;
+  position: relative;
+}
+
+.year-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-y: scroll;
+  visibility: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.days-of-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  background-color: #e0e0e0;
+}
+
+.day-of-week {
+  padding: 10px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.current-month {
+  background-color: #fff;
+}
+
+.other-month {
+  color: #aaa;
+}
+
+.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.highlighted-date {
+  background-color: #78b5f6;
+  border: 2px solid #000000;
+  margin: 1px;
+  border-radius: 50%;
+}
+
+.current-date {
+  border: 1px solid #248eff;
+}
+
+.year-selector {
+  cursor: pointer;
+  padding: 3px;
+}
+
+.year-selector:hover,
+.month:hover {
+  background-color: #aaa;
+  border-radius: 4px;
+}
+
+.year-month {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 8px;
+  border-top: thin dashed #aaa;
+  border-bottom: thin dashed #aaa;
+  border-width: thin;
+}
+.year {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.month {
+  cursor: pointer;
+  padding: 3px;
+}
+
+.visibility {
+  visibility: visible;
+}
+.date-range {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.Disable {
+  background-color: #fbfafa;
+  border: 1px solid rgb(42, 41, 41);
+}
+
+.button {
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.cover-page {
+  display: none;
 }
