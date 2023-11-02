@@ -6,6 +6,7 @@ import DateRangePicker from "./components/DateRangePicker";
 function App() {
   return (
     <div className="App">
+      <div className=".App-header ">Supplyhouse IT – FE Assessment</div>
       <DateRangePicker />
     </div>
   );
